@@ -5,7 +5,7 @@ defmodule HelloWorld do
   if no name is given.
   """
   @spec hello(String.t) :: String.t
-  def hello(addressee \\ 'World') do
+  def hello(addressee) do
     "Hello, #{addressee}!"
   end
 end
