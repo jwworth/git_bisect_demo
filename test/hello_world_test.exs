@@ -14,4 +14,8 @@ defmodule HelloWorldTest do
   test "says hello upcased name" do
     assert HelloWorld.hello("ALICE") == "Hello, ALICE!"
   end
+
+  test "says hello robot name" do
+    assert HelloWorld.hello("Destroyer 3000") == "Hello, Destroyer 3000!"
+  end
 end
