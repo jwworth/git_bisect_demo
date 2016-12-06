@@ -12,8 +12,9 @@ excellent project I wholeheartedly recommend.
 Install [Elixir](http://elixir-lang.org). Then:
 
 ```
-$ git clone https://github.com/jwworth/git_bisect_demo
+$ git clone https://github.com/jwworth/git_bisect_demo.git
 $ cd git_bisect_demo
+$ git reset HEAD^
 $ mix test
 ```
 
@@ -30,6 +31,12 @@ The desired behavior was specified by the module's inline comments:
 Using the failing test, execute a Git bisect to identify the commit that
 introduced the regression. Then, read the commit message and try to understand
 and explain what happened.
+
+Here's the command to run just the failing test:
+
+```
+$ mix test test/regression_test.exs:7
+```
 
 ### Basic Commands
 
